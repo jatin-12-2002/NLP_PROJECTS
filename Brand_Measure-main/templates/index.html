@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Processing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech to Text Processing</h1>
+        <form id="fileUploadForm" enctype="multipart/form-data">
+            <label for="file">Upload Audio File:</label>
+            <input type="file" id="file" name="file" accept="audio/*" required>
+            <button type="submit">Upload & Process</button>
+        </form>
+
+        <div id="status" class="status"></div>
+
+        <div id="transcriptResults" class="results-section">
+            <h2>Results</h2>
+            <div class="result-block">
+                <h3>Transcript:</h3>
+                <pre id="transcript"></pre>
+            </div>
+            <div class="result-block">
+                <h3>Spell Corrected:</h3>
+                <pre id="spellCorrected"></pre>
+            </div>
+            <div class="result-block">
+                <h3>Extracted Keywords:</h3>
+                <pre id="extractedKeywords"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

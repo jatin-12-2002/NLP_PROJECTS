@@ -1,0 +1,10 @@
+
+---
+applications:
+- name: textSummarization
+  memory: 4000MB
+  disk_quota: 3GB
+  random-route: true
+  parameters:
+    memory: 4000M
+    buildpack: https://github.com/cloudfoundry/cf-buildpack-python

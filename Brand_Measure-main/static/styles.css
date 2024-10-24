@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in width and height */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+html, body {
+    height: 100vh; /* Ensure the body takes up the full height */
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow: auto; /* Prevent default overflow */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow: auto; /* Allow body to scroll */
+}
+
+.container {
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow: auto; /* Allow container to scroll */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.status {
+    margin-top: 20px;
+    color: green;
+}
+
+.results-section {
+    margin-top: 30px;
+    text-align: left;
+    border: 1px solid #ddd; /* Add border for visual separation */
+    padding: 10px; /* Add padding */
+    height: 400px; /* Set a fixed height for the results section */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    flex-grow: 1; /* Allow results section to grow and take available space */
+}
+
+.result-block {
+    margin-bottom: 20px; /* Spacing between result blocks */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+pre {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    white-space: pre-wrap; /* Allow wrapping for long text */
+    word-wrap: break-word; /* Break long words */
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
