@@ -1,0 +1,15 @@
+ipykernel
+transformers
+pandas
+from-root
+dill
+fastapi
+uvicorn
+awscli
+boto3
+mypy-boto3-s3
+torch  --extra-index-url https://download.pytorch.org/whl/cpu
+-e .
+
+
+# pip install torch  --extra-index-url https://download.pytorch.org/whl/cpu
