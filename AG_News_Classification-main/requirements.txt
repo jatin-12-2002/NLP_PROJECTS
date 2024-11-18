@@ -1,0 +1,27 @@
+numpy 
+pandas
+ipykernel
+transformers
+datasets
+matplotlib
+seaborn
+nltk
+accelerate
+regex
+scikit-learn
+safetensors
+from-root
+awscli
+boto3
+mypy-boto3-s3
+fastapi==0.78.0
+uvicorn==0.18.3
+Jinja2==3.1.2
+celery[redis]
+celery
+redis
+torch  --extra-index-url https://download.pytorch.org/whl/cpu
+
+-e .
+
+# pip install torch  --extra-index-url https://download.pytorch.org/whl/cpu

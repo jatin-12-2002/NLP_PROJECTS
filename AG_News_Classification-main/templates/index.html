@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG News Classification</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AG News Classification</h1>
+        <p>Enter a news snippet to classify its category:</p>
+        <!-- Text Input for Prediction -->
+        <div class="input-section">
+            <textarea id="textInput" placeholder="Enter text for classification..." rows="4"></textarea>
+            <button id="predictButton">Predict</button>
+        </div>
+
+        <!-- Prediction Output Section -->
+        <div id="output" class="output-section">
+            <h2>Prediction Result:</h2>
+            <p><strong>Label:</strong> <span id="label"></span></p>
+            <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+        </div>
+
+        <!-- Training Button and Status -->
+        <div class="training-section">
+            <button id="trainButton">Train Model</button>
+            <div id="trainingStatus" class="status-section">
+                <h2>Training Status:</h2>
+                <p id="trainingMessage">Click "Train Model" to start training.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
